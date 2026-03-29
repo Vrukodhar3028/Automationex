@@ -38,9 +38,9 @@ describe('Registration test', () => {
             cy.get('span span').should('contain', testcases.span)
             cy.get(testcases.quantity).should('have.value', testcases.quantityptag)
             cy.get(testcases.cart).eq(0).should('be.visible').and('not.be.disabled')
-            cy.contains('p', 'Availability:').parent().should('contain', testcases.availability)
-            cy.contains('p', 'Condition:').parent().should('contain', testcases.condition)
-            cy.contains('p', 'Brand:').parent().should('contain', testcases.Brand)
+            cy.get('p', 'Availability:').parent().should('contain', testcases.availability)
+            cy.get('p', 'Condition:').parent().should('contain', testcases.condition)
+            cy.get('p', 'Brand:').parent().should('contain', testcases.Brand)
 
         })
     })

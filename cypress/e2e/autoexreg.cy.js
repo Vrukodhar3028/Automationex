@@ -70,11 +70,11 @@ describe('Registration test', () => {
 
         cy.get(`${autoex1.ad}, ${autoex1.ad}`).should('exist')
         cy.get(autoex1.ad1).type(user.ad1)
-        //Country dropdown
+      
         cy.get(autoex1.con).should('exist').and('have.value', 'India')
             .find('option')
             .should('have.length', 7)
-        cy.get(autoex1.con).find('option').each(($option) => { //looping through each option within the dropdown
+        cy.get(autoex1.con).find('option').each(($option) => {
             const value = $option.val()
             cy.get(autoex1.con).select(value).should('have.value', value)
         })
