@@ -25,7 +25,7 @@ describe('Registration test', () => {
         cy.contains(testcases.text).should('be.visible')
 
     })
-    it('Product', () => {
+    it.only('Product', () => {
         login()
         cy.get(testcases.products).should('be.visible').click()
         cy.url().should('include', 'products')
@@ -38,9 +38,9 @@ describe('Registration test', () => {
             cy.get('span span').should('contain', testcases.span)
             cy.get(testcases.quantity).should('have.value', testcases.quantityptag)
             cy.get(testcases.cart).eq(0).should('be.visible').and('not.be.disabled')
-            cy.get('p', testcases.availabilitytext).parent().should('contain', testcases.availability)
-            cy.get('p', testcases.conditiontext).parent().should('contain', testcases.condition)
-            cy.get('p', testcases.Brandname).parent().should('contain', testcases.Brand)
+            cy.contains('p', testcases.availabilitytext).parent().should('contain', testcases.availability)
+            cy.contains('p', testcases.conditiontext).parent().should('contain', testcases.condition)
+            cy.contains('p', testcases.Brandname).parent().should('contain', testcases.Brand)
 
         })
     })
@@ -61,7 +61,7 @@ describe('Registration test', () => {
         cy.get(testcases.dropdown).click()
         cy.contains('You have been successfully subscribed!')
     })
-    it.only('Subscrieb Email from Cart page', ()=>{
+    it('Subscrieb Email from Cart page', ()=>{
         cy.visit(baseurls.baseURLs1)
         cy.get(testcases.cart).eq(0).should('exist').click()
         cy.url().should('include', 'view_cart')

@@ -5,7 +5,7 @@ import autoex1 from '../objects/autoex.obj'
 import { generateUser } from '../support/userfactory'
 describe('Registration test', () => {
 
-    it.skip("Autoexercise Registration test", () => {
+    it("Autoexercise Registration test", () => {
         const user = generateUser()
         cy.visit(baseurls.baseURLs1)
         cy.get(autoex1.clogin).click()
