@@ -20,7 +20,11 @@ conditiontext: 'Condition:',
 Brandname: 'Brand:',
 condition: 'New',
 Brand: 'Polo',
-availability: 'In Stock'
+availability: 'In Stock',
+subscribe: '[id="susbscribe_email"]',
+dropdown: '[class="fa fa-arrow-circle-o-right"]',
+cart: '[href="/view_cart"]',
+
 
 
 

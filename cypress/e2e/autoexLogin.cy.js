@@ -54,4 +54,21 @@ describe('Registration test', () => {
         cy.get(testcases.searchedprod).should('contain', testcases.searchtext)
 
     })
+    it('Subscrieb Email', ()=>{
+        cy.visit(baseurls.baseURLs1)
+        cy.get('Footer').scrollIntoView()
+        cy.get(testcases.subscribe).should('be.visible').type(autologin.Email)
+        cy.get(testcases.dropdown).click()
+        cy.contains('You have been successfully subscribed!')
+    })
+    it.only('Subscrieb Email from Cart page', ()=>{
+        cy.visit(baseurls.baseURLs1)
+        cy.get(testcases.cart).eq(0).should('exist').click()
+        cy.url().should('include', 'view_cart')
+         cy.get('Footer').scrollIntoView()
+        cy.get(testcases.subscribe).should('be.visible').type(autologin.Email)
+        cy.get(testcases.dropdown).click()
+        cy.contains('You have been successfully subscribed!')
+    })
+
 })
