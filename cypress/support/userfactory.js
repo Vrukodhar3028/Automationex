@@ -9,10 +9,16 @@ export function generateUser() {
     fir: "edw",
     las: "vredc",
     ad1: "10-23, HNK road",
-    con: "India",
+    con: "Canada",
     state: "Telangana",
     city: "Hyderabad",
     zip: "500383",
-    Mobile: "9038493843"
+    Mobile: "9038493843",
+    comment: "Hellow",
+    Cardname: "Master",
+    Cardnum: "547289429345",
+    CVC: "234",
+    expirymonth: "12",
+    expiryyear: "2029"
   }
 }

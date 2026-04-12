@@ -1,11 +1,9 @@
 /// <reference types="cypress" />
 import baseurls from '../../config/config.json'
 import autoex1 from '../objects/autoex.obj'
-//import user from '../fixtures/Autoexcreds.json'
 import { generateUser } from '../support/userfactory'
 describe('Registration test', () => {
-
-    it("Autoexercise Registration test", () => {
+    it('register user', ()=>{
         const user = generateUser()
         cy.visit(baseurls.baseURLs1)
         cy.get(autoex1.clogin).click()
@@ -90,7 +88,6 @@ describe('Registration test', () => {
         cy.get(autoex1.creacc).should('not.exist')
 
     })
-
 })
 
 
