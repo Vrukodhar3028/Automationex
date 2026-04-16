@@ -17,7 +17,8 @@ confirmorder: '[class="form-control btn btn-primary submit-button"]',
 orderplaced: '[class="col-sm-9 col-sm-offset-1"]',
 deleteacc: '[href="/delete_account"]',
 accdeleted: '[class="col-sm-9 col-sm-offset-1"]',
-cont: '[data-qa="continue-button"]'
+cont: '[data-qa="continue-button"]',
+homepage: '[id="slider-carousel"]',
 
 }
 
