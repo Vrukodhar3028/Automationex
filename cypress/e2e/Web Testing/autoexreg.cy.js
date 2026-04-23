@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
-import baseurls from '../../config/config.json'
-import autoex1 from '../objects/autoex.obj'
-import { generateUser } from '../support/userfactory'
+import baseurls from '../../../config/config.json'
+import autoex1 from '../../objects/autoex.obj'
+import { generateUser } from '../../support/userfactory'
 describe('Registration test', () => {
     it('register user', ()=>{
         const user = generateUser()

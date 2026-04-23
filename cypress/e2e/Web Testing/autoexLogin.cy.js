@@ -1,8 +1,8 @@
-import baseurls from '../../config/config.json'
-import Login from '../objects/autoexlogin.obj'
-import autologin from '../fixtures/autologin.json'
-import testcases from '../objects/testcasesauto.obj'
-import autoex1 from '../objects/autoex.obj'
+import baseurls from '../../../config/config.json'
+import Login from '../../objects/autoexlogin.obj'
+import autologin from '../../fixtures/autologin.json'
+import testcases from '../../objects/testcasesauto.obj'
+import autoex1 from '../../objects/autoex.obj'
 
 
 describe('Login test', () => {

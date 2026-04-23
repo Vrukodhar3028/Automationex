@@ -1,10 +1,10 @@
 /// <reference types="cypress" />
-import baseurls from '../../config/config.json'
-import { generateUser } from '../support/userfactory'
-import checkout from '../objects/checkout.obj'
-import testcases from '../objects/testcasesauto.obj'
-import autoex1 from '../objects/autoex.obj'
-import login from '../objects/autoexlogin.obj'
+import baseurls from '../../../config/config.json'
+import { generateUser } from '../../support/userfactory'
+import checkout from '../../objects/checkout.obj'
+import testcases from '../../objects/testcasesauto.obj'
+import autoex1 from '../../objects/autoex.obj'
+import login from '../../objects/autoexlogin.obj'
 
 describe('Registration while checkout', () => {
     it('Register during checkout', () => {

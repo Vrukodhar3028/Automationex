@@ -1,7 +1,7 @@
 ///<reference types = "cypress"/>
-import locators from '../objects/autoex.obj'
-import userr from '../fixtures/usercreds.json'
-import baseURLs from "../../config/config.json"
+import locators from '../../objects/autoex.obj'
+import userr from '../../fixtures/usercreds.json'
+import baseURLs from "../../../config/config.json"
 
 describe("Books cart page", () => {
     it.only('Registration test', () => {
